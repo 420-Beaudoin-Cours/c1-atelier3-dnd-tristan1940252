@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="359.0" prefWidth="472.0">
+         <children>
+            <TextField fx:id="txfSource" layoutX="46.0" layoutY="49.0" onDragDetected="#txfDragDetected" onDragDropped="#txfTargetDrapDrop" onDragOver="#txfTargetDragOver" promptText="txfSource" />
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="242.0" layoutY="57.0" onDragDropped="#imgTargetDragDrop" onDragOver="#imgTargetDragOver" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@elmo.jpeg" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="cmbTarget" layoutX="140.0" layoutY="254.0" onDragDropped="#cmbTargetDragDrop" onDragOver="#cmbTargetDragOver" prefWidth="150.0" promptText="Allez!!!!!" />
+            <TextField fx:id="txfSource1" layoutX="46.0" layoutY="79.0" onDragDetected="#txfDragDetected" onDragDropped="#txfTargetDrapDrop" onDragOver="#txfTargetDragOver" promptText="txfSource" />
+            <TextField fx:id="txfSource111" layoutX="46.0" layoutY="119.0" onDragDetected="#txfDragDetected" onDragDropped="#txfTargetDrapDrop" onDragOver="#txfTargetDragOver" promptText="txfSource" />
+            <TextField fx:id="txfSource1111" layoutX="46.0" layoutY="154.0" onDragDetected="#txfDragDetected" onDragDropped="#txfTargetDrapDrop" onDragOver="#txfTargetDragOver" promptText="txfSource" />
+            <TextField fx:id="txfSource11111" layoutX="46.0" layoutY="190.0" onDragDetected="#txfDragDetected" onDragDropped="#txfTargetDrapDrop" onDragOver="#txfTargetDragOver" promptText="txfSource" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
